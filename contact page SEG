@@ -4,13 +4,11 @@
 <head>
     <title>Contact</title>
 </head>
-
 <body>
     <!-- This is the header for the webpage -->
     <header> 
         <h1>Contact</h1>
     </header>
-
     <!-- This is the navigation menu for the webpage -->
     <nav>
         <ul>
@@ -21,15 +19,11 @@
             <li> <a href="reviews.html"> Reviews </a></li>
         </ul>
     </nav>
-    
     <h2> 
         <p>If you have any feedback or questions, do not hesitate to contact us!</p>
         <p><a href="mailto:safeplate@info.com">safeplate@info.com</a></p> 
-    </h2>
-    
+    </h2> 
     <footer>
     </footer>
-
 </body>
-
 </html>
