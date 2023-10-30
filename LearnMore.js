@@ -1,5 +1,3 @@
-
-
     <script>
         function toggleAboutText() {
             const aboutText = document.getElementById("about-text");
@@ -17,5 +15,3 @@
             }
         }
     </script>
-</body>
-</html>
