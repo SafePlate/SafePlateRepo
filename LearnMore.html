@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafePlate - Your Culinary Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                SafePlate
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Discover a world of flavors, safety, and health with SafePlate.</h1>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="image-container">
+                        <img src="calorie.jpg" alt="Calories Icon">
+                    </div>
+                    <div class="text-container">
+                        <h3>Calorie Checker</h3>
+                        <p>Find out the calorie content of your favorite foods with our advanced calorie calculator.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="image-container">
+                        <img src="allergy.jpg" alt="Allergy Icon">
+                    </div>
+                    <div class="text-container">
+                        <h3>Allergy Info</h3>
+                        <p>Identify allergens in various food items and make informed choices for your health.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="image-container">
+                        <img src="Meat.png" alt="Dietary Preferences Icon">
+                    </div>
+                    <div class="text-container">
+                        <h3>Dietary Preferences</h3>
+                        <p>Discover a variety of meals tailored to your unique dietary preferences. Whether you follow a vegetarian, vegan, gluten-free, or other special diet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p id="about-text">SafePlate is your reliable companion in the culinary world, dedicated to providing accurate and trustworthy information about the food you consume.</p>
+            <button id="learn-more-button" onclick="toggleAboutText()">Learn More</button>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, please feel free to contact us at <a href="mailto:info@safeplate.com">info@safeplate.com</a>.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 SafePlate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAboutText() {
+            const aboutText = document.getElementById("about-text");
+            const learnMoreButton = document.getElementById("learn-more-button");
+            
+            if (aboutText.style.display === "none" || aboutText.style.display === "") {
+            
+                aboutText.style.display = "block";
+                learnMoreButton.innerHTML = "Show Less"; 
+            } 
+            
+            else {
+                aboutText.style.display = "none";
+                learnMoreButton.innerHTML = "Learn More"; 
+            }
+        }
+    </script>
+</body>
+</html>
