@@ -168,7 +168,8 @@ body {
 
 .showcase-item p {
     margin-top: 10px;
-    color: #fff;
+    color: #ffffff;
+    font-size: 25px;
 }
 
 /* Slide 3 */
@@ -213,12 +214,12 @@ body {
 
 /* Footer */
 footer {
-    float: left;
     width: 100%;
     padding: 2em 0;
-    width: 100%;
     text-align: center;
     background: lightGrey;
+    position: relative;
+    margin-top: auto; /* Push the footer to the bottom */
 }
 
 footer ul {
@@ -235,12 +236,13 @@ footer a {
     font-weight: bold;
     color: darkGrey;
     &:focus,
-    &:hover {color: lightsteelblue;}
-  }
-
+    &:hover {
+        color: lightsteelblue;
+    }
+}
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-color: rgb(224, 244, 220);
     margin: 0;
     position: relative;
 }
@@ -354,4 +356,80 @@ body::after {
 /* Add margin between title and description for better spacing */
 .desc-content1 h2, .desc-content2 h2, .desc-content3 h2 {
     margin-bottom: 10px;
+}
+
+
+.slide4 {
+    
+    padding: 40px 20px; 
+    background-color: rgb(224,244,220);
+    
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px; 
+}
+
+.column-container {
+    width: 45%; 
+    background-color:rgb(123, 250, 123); 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.column {
+    text-align: center;
+    position: relative; 
+}
+
+.column h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.column p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.horizontal-row {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.horizontal-row h1 {
+    font-size: 36px;
+    color: #000000; 
+    margin-bottom: 20px; 
+   
+}
+
+.values-row {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+}
+
+.value-box-container {
+    text-align: center;
+    width: 33%; 
+    position: relative;
+}
+
+.value-box {
+    background-color: rgb(123, 250, 123); 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+}
+
+.value-box h3,
+.value-box p {
+    color: #ffffff; 
+    margin: 0; 
 }
