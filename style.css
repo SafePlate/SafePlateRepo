@@ -17,10 +17,10 @@ body {
 
 #logo {
     font-size: 100px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
     font-weight: bold;
-    color: lightseagreen;
-    -webkit-text-stroke: 2px firebrick;
+    color: rgb(123, 250, 123);
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
     position: absolute;
     top: 20px;
     left: 50%;
@@ -123,7 +123,7 @@ body {
 /* slide 2 */
 
 .slide2 {
-    background-color: black; 
+    background: lightGrey;
 }
 
 .slide2-title {
@@ -136,20 +136,21 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 20%;
+    padding: 0;
 }
 
 .horizontal-showcase {
     display: flex;
     gap: 30%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    
 }
 
 .showcase-item {
     flex: 1;
     text-align: center;
     overflow: hidden;
+    width: 500px;
+    height: 500px;
     transition: transform 1.3s cubic-bezier(.19,1,.22,1), opacity .5s ease, -webkit-transform 1.3s cubic-bezier(.19,1,.22,1);
 }
 
@@ -237,3 +238,120 @@ footer a {
     &:hover {color: lightsteelblue;}
   }
 
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    position: relative;
+}
+
+body::after {
+    content: "";
+    background: url('Back.jpg') center/cover no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+    background-color: #96fc99;
+}
+
+.Header {
+    color: white;
+    background-color: rgb(123, 250, 123);
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand h1 {
+    margin: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu li {
+    margin-right: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu li:hover {
+    transform: scale(1.15);
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    transition: transform 0.6s ease-in-out;
+}
+
+.Section1,
+.Section3 {
+    text-align: left;
+}
+
+.Section2 {
+    text-align: right;
+}
+
+/* Optional: You can add styles to the sections' content to provide some spacing */
+.content1, .content3 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align content to the right */
+    padding: 20px;
+}
+
+/* Optional: You can style the images and descriptions further if needed */
+.img1, .img2, .img3 {
+    margin-right: 10px; /* Add some margin between the image and description */
+}
+
+/* Set a specific width and height for all images */
+.img1 img, .img2 img, .img3 img {
+    width: 400px; /* Set your desired width */
+    height: 400px; /* Set your desired height */
+    object-fit: cover; /* Maintain aspect ratio and cover the specified dimensions */
+}
+
+.desc-content1, .desc-content3 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(123, 250, 123);
+    padding: 90px;
+    font-size: x-large;
+    color: antiquewhite;
+    border-radius: 15px;
+}
+
+.desc-content2 {
+    align-items: flex-end; /* Align content to the right */
+    display: flex;
+    flex-direction: column;
+    padding: 90px;
+    font-size: x-large;
+    color: antiquewhite;
+    border-radius: 15px;
+    background-color: rgb(123, 250, 123);
+}
+
+/* Add margin between title and description for better spacing */
+.desc-content1 h2, .desc-content2 h2, .desc-content3 h2 {
+    margin-bottom: 10px;
+}
