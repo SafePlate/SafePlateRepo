@@ -1,47 +1,7 @@
-<<<<<<< Updated upstream
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    transition: color .25s;
-}
-
-/* bottom nav */
-footer {
-    float: left;
-    width: 100%;
-    padding: 2em 0;
-    width: 100%;
-    text-align: center;
-    background: lightGrey;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer li {
-    display: inline;
-    margin-right: 10px;
-}
-
-footer a {
-    font-size: 1.25em;
-    font-weight: bold;
-    color: darkGrey;
-    &:focus,
-    &:hover {color: lightsteelblue;}
-  }
-
-=======
 body {
     margin: 0;
     padding: 0;
 }
-
 
 .slide {
     height: 100vh;
@@ -50,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: url(Pictures/homebackground.gif) center/cover no-repeat;
+    background: url(Pictures/WebsiteTimerBackground.jpeg) center/cover no-repeat;
     filter: brightness(0.7);
 }
 
@@ -120,22 +80,43 @@ body {
     opacity: 1;
 }
 
-#button-middle {
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 18px;
-    padding: 15px 30px;
-    background-color: #4CAF50;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    filter: brightness(1.14285714285); 
-    transition: 0.2s ease-in-out;
+.content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
 }
 
-#button-middle:hover {
-    
+.text-box {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+
+}
+
+.email-input {
+    width: 70%; /* Adjust the width as needed */
+}
+
+.send-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px; /* Adjust the right property to move the button more to the left */
+    top: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.send-button:hover {
     transform: scale(1.1);
 }
 
@@ -188,4 +169,71 @@ body {
     margin-top: 10px;
     color: #fff;
 }
->>>>>>> Stashed changes
+
+/* Slide 3 */
+
+.slide3 {
+    background-color: #f0f0f0; /* Background color for slide 3 */
+}
+
+.two-column {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-column {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-column h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.left-column p {
+    font-size: 18px;
+    color: #333;
+}
+
+.right-column img {
+    width: 100%;
+    max-width: 100%;
+    filter: brightness(0.7); /* Adjust brightness for the picture */
+}
+
+
+/* Footer */
+footer {
+    float: left;
+    width: 100%;
+    padding: 2em 0;
+    width: 100%;
+    text-align: center;
+    background: lightGrey;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer a {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: darkGrey;
+    &:focus,
+    &:hover {color: lightsteelblue;}
+  }
+
