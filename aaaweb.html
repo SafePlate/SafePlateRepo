@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafePlate</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="slide">
+        <div id="logo">SafePlate</div>
+        <div id="menu">
+            <div class="menu-item">
+                <span class="material-icons icon icon-home">home</span>
+            </div>
+            <div class="menu-item">
+                <span class="material-icons icon icon-crisis_alert">crisis_alert</span>
+            </div>
+            <div class="menu-item">
+                <span class="material-icons icon icon-star">star</span>
+            </div>
+            <div class="menu-item">
+                <span class="material-icons icon icon-call">call</span>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <div class="flip-clock" id="countdown"></div>
+
+            <div class="text-box">
+                <input type="text" class="email-input" placeholder="Enter your email">
+                <button class="send-button" onclick="sendEmail()" >Get notified</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- slide 2 -->
+    <div class="slide2">
+        <div class="side-column">
+            <h1 class="slide2-title">SERVICES</h1>
+
+            <div class="horizontal-showcase">
+                <div class="showcase-item">
+                    <img src="Pictures/Calc.png" alt="Image 1">
+                    <p>Calorie Calculator</p>
+                </div>
+
+                <div class="showcase-item">
+                    <img src="Pictures/allergy.png" alt="Image 2">
+                    <p>Allergy Check</p>
+                </div>
+
+                <div class="showcase-item">
+                    <img src="Pictures/vegetables.png" alt="Image 3">
+                    <p>Dietary Needs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="Section1">
+        <div class="content1">
+            <div class="img1">
+                <img src="Pictures/vegetables.png" alt="Image 1">
+            </div>
+            <div class="desc-content1">
+                <div class = "Text">
+                <h2>Dietary Preferences</h2>
+                <p>SafePlate's Diet Preferences component is designed to cater to individuals with diverse dietary choices and requirements. Whether you're a vegetarian, vegan, pescatarian, or follow specific dietary guidelines like keto or paleo, this feature ensures that your meal options align with your preferences. Simply input your dietary choices, and SafePlate will curate personalized meal suggestions, making it effortless to maintain your diet plan while enjoying a variety of delicious and satisfying meals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="Section2">
+        <div class="content2">
+            <div class="desc-content2">
+                <div class ="Text">
+                <h2>Allergy Checker</h2>
+                <p>Safety is a top priority when it comes to food, especially for individuals with allergies. SafePlate's Allergy Checker component provides peace of mind by allowing users to scan food products or enter ingredients to check for potential allergens. Whether you're allergic to nuts, gluten, dairy, or any other common allergen, this feature quickly identifies products or recipes that might trigger your allergies. It helps you make informed choices, ensuring your meals are safe, delicious, and tailored to your specific dietary needs.</p>
+                </div>
+            </div>
+            <div class="img2">
+                <img src="Pictures/allergy.png" alt="Image 2">
+            </div>
+        </div>
+    </section>
+    
+    <section class="Section3">
+        <div class="content3">
+            <div class="img3">
+                <img src="Pictures/Calc.png" alt="Image 3">
+            </div>
+            <div class="desc-content3">
+                <div class = "Text">
+                <h2>Calorie and Macro Calculator</h2>
+                <p>Achieving your fitness goals is easier with SafePlate's Calorie and Macro Calculator. This component empowers users to track their daily calorie intake and monitor macronutrients such as carbohydrates, proteins, and fats. Whether you're trying to lose weight, gain muscle, or maintain a balanced diet, input your meals and recipes to instantly receive detailed nutritional information. SafePlate's intuitive interface makes it simple to keep track of your progress, helping you stay on target and make healthier food choices that align with your fitness objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="slide4">
+
+        <!-- Horizontal Row: Our Values -->
+        <div class="horizontal-row">
+            <h1>OUR VALUES</h1>
+            <div class="values-row">
+                <div class="value-box">
+                    <h3>Persistent</h3>
+                    <p>We don't give up when things get challenging.</p>
+                </div>
+                <div class="value-box">
+                    <h3>Transparent</h3>
+                    <p>We are open, honest, and straightforward.</p>
+                </div>
+                <div class="value-box">
+                    <h3>Helpful</h3>
+                    <p>Being helpful is part of our DNA.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 1: Our Mission -->
+        <div class="two-columns">
+            <div class="column-container">
+                <div class="column">
+                    <h2>OUR MISSION</h2>
+                    <p>SafePlate is your reliable companion in the culinary world, dedicated to providing accurate and trustworthy information about the food you consume.</p>
+                </div>
+            </div>
+
+            <!-- Column 2: Our Story -->
+            <div class="column-container">
+                <div class="column">
+                    <h2>OUR STORY</h2>
+                    <p>Six university students seeking to understand exactly what they eat for both physical safety and mental well-being.</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- (Contact Us) -->
+    <div class="slide5">
+        <h1>Contact Us</h1>
+        <div class="contact-grid">
+            <div class="contact-person">
+                <img src="Pictures/person1.jpeg" alt="Person 1">
+                <h3>John Doe</h3>
+                <p>Role: Web Developer</p>
+                <p>Email: john.doe@example.com</p>
+            </div>
+            <div class="contact-person">
+                <img src="Pictures/person2.jpeg" alt="Person 2">
+                <h3>Doe John</h3>
+                <p>Role: Marketing Specialist</p>
+                <p>Email: doe.john@example.com</p>
+            </div>
+            <div class="contact-person">
+                <img src="Pictures/person3.jpeg" alt="Person 3">
+                <h3>Dohn Joe</h3>
+                <p>Role: UX/UI Designer</p>
+                <p>Email: dohn.joe@example.com</p>
+            </div>
+            <div class="contact-person">
+                <img src="Pictures/person4.avif" alt="Person 4">
+                <h3>Joe Dohn</h3>
+                <p>Role: Customer Support</p>
+                <p>Email: joe.dohn@example.com</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#values">Values</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+        <p class="copy">&copy; SafePlate 2023</p>
+    </footer>
+
+
+
+
+    <script src="code.js"></script>
+</body>
+</html>
