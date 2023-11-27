@@ -1,6 +1,4 @@
 body {
-<<<<<<< Updated upstream
-=======
     margin: 0;
     padding: 0;
 }
@@ -12,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: url(Pictures/WebsiteTimerBackground.jpeg) center/cover no-repeat;
+    background: url(Pictures/homebackground.jpeg) center/cover no-repeat;
     filter: brightness(0.7);
 }
 
@@ -215,9 +213,8 @@ body {
 
 /* moustapha part */
   body {
->>>>>>> Stashed changes
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    background-color: rgb(224, 244, 220);
     margin: 0;
     padding: 0;
     position: relative;
@@ -332,8 +329,6 @@ body::after {
 /* Add margin between title and description for better spacing */
 .desc-content1 h2, .desc-content2 h2, .desc-content3 h2 {
     margin-bottom: 10px;
-<<<<<<< Updated upstream
-=======
 }
 
 
@@ -476,5 +471,4 @@ footer a {
     &:hover {
         color: lightsteelblue;
     }
->>>>>>> Stashed changes
 }
